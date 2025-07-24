@@ -31,6 +31,25 @@ li {
   list-style: none;
 }
 
+.section-heading {
+  font-family: "Noto Serif", serif;
+  color: rgba(0, 0, 0, 1);
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+.orange-span {
+  color: rgba(233, 90, 8, 1);
+}
+
+.btn-primary {
+  background-color: rgba(233, 90, 8, 1);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 2vh 5vw;
+}
+
 /* Header Section Styles */
 
 .header-container {
@@ -74,14 +93,16 @@ li {
 /* Banner Section Styles */
 
 .banner {
+  max-width: 100%;
   margin-top: 13.33vh;
   padding-top: 11.78vh;
   display: flex;
+  justify-content: space-between;
   align-items: end;
 }
 
 .banner-info {
-  width: 50%;
+  width: 50vw;
 }
 
 .banner-info h1 {
@@ -91,21 +112,74 @@ li {
   font-weight: 700;
 }
 
-.banner-info span {
-  color: rgba(233, 90, 8, 1);
+.banner-img {
+  width: calc(100vw - 50vw);
 }
 
-.banner-img {
-  width: 50%;
+.banner-img img {
+  width: 100%;
+}
+/* Main Section Styles */
+
+/* Our Plants Section Styles */
+
+.our-plants-container {
+  margin-top: 13.33vh;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 5.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-plants-container p {
+  max-inline-size: 62vw;
+}
+
+.our-plants {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2vw;
+  row-gap: 2vw;
+}
+
+.our-plant {
+  max-width: 100vw;
+  color: rgba(17, 17, 17, 1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.our-plant-img {
+  max-width: 100%;
+}
+
+.our-plant > .our-plant-img > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-plant h5 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.our-plant p {
+  font-size: 1.375rem;
+  font-weight: 700;
 }
 
 /* Mobile Responsive Styles */
 
 @media screen and (max-width: 767px) {
-  .common-dimensions {
-    max-width: 100vw;
+  /* .common-dimensions {
+    max-width: 95vw;
     margin: 5vh 5vw;
-  }
+  } */
 
   .nav-bar img {
     width: 16vw;
@@ -135,5 +209,17 @@ li {
 
   .banner-info h1 {
     font-size: 2rem;
+  }
+
+  .our-plants-container {
+    margin-top: 10vh;
+  }
+
+  .our-plants-container p {
+    max-inline-size: 80vw;
+  }
+
+  .our-plants {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
