@@ -27,7 +27,7 @@
     <header class="header-container common-dimensions">
       <!-- Nav Section -->
       <nav class="nav-bar">
-        <a href=""><img src="./assets/logo.png" alt="" /></a>
+        <a href=""><img src="./assets/logo.png" alt="Site Logo" /></a>
         <div class="menu-container">
           <ul class="menu">
             <li>
@@ -79,7 +79,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -87,7 +89,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -95,7 +99,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -103,7 +109,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -111,7 +119,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -119,7 +129,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -127,7 +139,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
           <div class="our-plant">
             <figure class="our-plant-img">
@@ -135,7 +149,9 @@
             </figure>
             <h5>Lily Blossom</h5>
             <p>20 USD</p>
-            <button class="btn-primary">ADD TO CART</button>
+            <button onclick="cartStatus()" class="btn-primary">
+              ADD TO CART
+            </button>
           </div>
         </div>
       </section>
@@ -220,6 +236,44 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- Footer Section -->
+    <footer class="footer-section-container">
+      <div class="footer-logo">
+        <img src="./assets/logo.png" alt="Site Logo" />
+        <p>
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+      <div class="footer-link-1">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-link-2">
+        <ul>
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <img src="./assets/icon-linkedin.png" alt="Linkedin Icon" />
+        <img src="./assets/icon-twitter.png" alt="Twitter Icon" />
+        <img src="./assets/icon-facebook.png" alt="Facebook Icon" />
+        <img src="./assets/icon-youtube.png" alt="Youtube Icon" />
+      </div>
+    </footer>
+    <script>
+      function cartStatus() {
+        alert("Flower Added to Cart");
+      }
+    </script>
   </body>
 </html>

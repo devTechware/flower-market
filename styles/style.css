@@ -14,6 +14,10 @@ img {
   display: block;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* Common Styles */
 
 .common-dimensions {
@@ -191,12 +195,21 @@ li {
   width: 100%;
 }
 
+@keyframes rotatingBadge {
+  from {
+    transform: translate(35%, -45%) rotate(0deg);
+  }
+  to {
+    transform: translate(35%, -45%) rotate(360deg);
+  }
+}
+
 .badge {
   width: 50%;
   position: absolute;
+  animation: rotatingBadge 10s infinite linear;
   top: 0;
   right: 0;
-  transform: translate(35%, -45%);
 }
 
 .flower-store-info {
@@ -387,6 +400,47 @@ li {
   flex: 1;
 }
 
+/* Footer Section Styles */
+
+.footer-section-container {
+  padding: 5.55vh 11.11vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  max-width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+}
+
+.footer-link-1 > ul,
+.footer-link-2 > ul {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.social-icons {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.67vw;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+}
+
+.footer-section-container img:hover {
+  cursor: pointer;
+}
+
 /* Mobile Responsive Styles */
 
 @media screen and (max-width: 767px) {
@@ -556,5 +610,21 @@ li {
 
   .newsletter-container {
     padding: 11vh 10vw;
+  }
+
+  /* Footer Mobile Styles */
+
+  .footer-section-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 20px;
   }
 }
